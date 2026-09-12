@@ -1,0 +1,43 @@
+# --- OS / system files ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- Editor / IDE ---
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Environment / secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Dependencies & build output (common stacks; harmless if unused) ---
+node_modules/
+dist/
+build/
+out/
+coverage/
+.nyc_output/
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Rust ---
+target/
+
+# --- .NET ---
+bin/
+obj/

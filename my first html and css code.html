@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website work well on phones and computers -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My First Website</title>
+
+    <!-- ================================
+         CSS STARTS HERE
+         ================================ -->
+    <style>
+
+        /* ---------- GENERAL PAGE ---------- */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f8ff;
+            color: #333;
+        }
+
+
+        /* ---------- HEADER ---------- */
+
+        header {
+            background: linear-gradient(to right, #1565c0, #7b1fa2);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin: 0 0 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            margin: 0;
+        }
+
+
+        /* ---------- NAVIGATION BAR ---------- */
+
+        nav {
+            background-color: #222;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        /* Changes the link when the mouse is over it */
+        nav a:hover {
+            color: #ffd54f;
+        }
+
+
+        /* ---------- MAIN CONTENT ---------- */
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+
+        /* ---------- WELCOME SECTION ---------- */
+
+        .welcome {
+            background-color: white;
+            text-align: center;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #ccc;
+        }
+
+        .welcome h2 {
+            color: #1565c0;
+            font-size: 32px;
+        }
+
+        .welcome p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+
+        /* ---------- CARDS ---------- */
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 25px;
+            text-align: center;
+            border-radius: 15px;
+
+            /* Adds a shadow around the card */
+            box-shadow: 0 5px 15px #ccc;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #7b1fa2;
+            font-size: 24px;
+        }
+
+        .card p {
+            line-height: 1.5;
+        }
+
+
+        /* ---------- BUTTON ---------- */
+
+        .button {
+            display: inline-block;
+            background-color: #ff9800;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        .button:hover {
+            background-color: #e68900;
+        }
+
+
+        /* ---------- FOOTER ---------- */
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+
+        /* ---------- MOBILE DESIGN ---------- */
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            .card {
+                width: 80%;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================================
+         HEADER
+         ================================ -->
+
+    <header>
+
+        <h1>🌟 Welcome to My Website!</h1>
+
+        <p>Learn • Create • Explore 🚀</p>
+
+    </header>
+
+
+    <!-- ================================
+         NAVIGATION
+         ================================ -->
+
+    <nav>
+
+        <a href="#home">🏠 Home</a>
+
+        <a href="#about">👤 About</a>
+
+        <a href="#hobbies">🎮 Hobbies</a>
+
+        <a href="#contact">📞 Contact</a>
+
+    </nav>
+
+
+    <!-- ================================
+         MAIN CONTENT
+         ================================ -->
+
+    <main class="container">
+
+
+        <!-- WELCOME SECTION -->
+
+        <section id="home" class="welcome">
+
+            <h2>👋 Hello Everyone!</h2>
+
+            <p>
+                My name is Zaydan and this is my first website.
+                I am learning how to build websites using
+                HTML and CSS.
+            </p>
+
+            <a href="#about" class="button">
+                Learn More 🚀
+            </a>
+
+        </section>
+
+
+        <!-- ================================
+             CARDS
+             ================================ -->
+
+        <section class="cards">
+
+
+            <!-- CARD 1 -->
+
+            <div class="card">
+
+                <h3>💻 Coding</h3>
+
+                <p>
+                    I enjoy learning how to create
+                    websites and computer programs.
+                </p>
+
+                <a href="#" class="button">
+                    Learn
+                </a>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+
+            <div class="card">
+
+                <h3>⚽ Football</h3>
+
+                <p>
+                    Football is one of my favourite
+                    sports. I enjoy playing with friends.
+                </p>
+
+                <a href="#" class="button">
+                    Explore
+                </a>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+
+            <div class="card">
+
+                <h3>🎮 Games</h3>
+
+                <p>
+                    I love playing games and discovering
+                    new adventures.
+                </p>
+
+                <a href="#" class="button">
+                    Discover
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             ABOUT SECTION
+             ================================ -->
+
+        <section id="about" class="welcome" style="margin-top: 30px;">
+
+            <h2>👤 About Me</h2>
+
+            <p>
+                I am a young learner who enjoys technology,
+                creativity and discovering new things.
+                My goal is to become a great programmer
+                in the future.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ================================
+         FOOTER
+         ================================ -->
+
+    <footer id="contact">
+
+        <p>
+            © 2026 My First Website
+        </p>
+
+        <p>
+            Made with ❤️ using HTML & CSS
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
+MINI WEBSITE.html
+Displaying MINI WEBSITE.html.
